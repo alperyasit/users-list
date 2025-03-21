@@ -1,0 +1,23 @@
+.button {
+  width: calc(30% - 30px);
+  padding: 15px;
+  border: none;
+  border-radius: 50px;
+  font-size: 24px;
+  letter-spacing: 0.7px;
+  background-color: green;
+  color: white;
+  margin-top: 2.4rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  &:hover {
+    background-color: #a6d54e;
+    color: #666;
+    cursor: pointer;
+  }
+
+  &:disabled {
+    background-color: #e0e0e0;
+    color: #999;
+    cursor: not-allowed;
+  }
+}
