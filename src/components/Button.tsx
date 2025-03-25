@@ -2,7 +2,7 @@ import "./Button.scss";
 
 interface ButtonPropTypes {
   handleClick: () => void;
-  disabled: boolean;
+  disabled?: boolean;
 }
 
 const Button = ({ handleClick, disabled }: ButtonPropTypes) => {
