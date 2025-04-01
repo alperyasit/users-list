@@ -17,7 +17,16 @@ const Home = () => {
   }, []);
 
   if (!users) return null;
-
+  console.log("alper".split("").map((harf, sıra) => sıra));
+  const sayilar = [1, 2, 3, 4, 5, 6, 7];
+  let toplam = 0;
+  sayilar.map((t) => {
+    if (t % 2 === 1) {
+      toplam += t;
+    }
+    return;
+  });
+  console.log(toplam);
   return (
     <>
       {users.map((kullanıcı) => (
